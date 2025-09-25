@@ -2,9 +2,8 @@ from typing import List, Optional, Literal, Dict
 from pydantic import BaseModel, Field
 from datetime import datetime
 
-MilestoneType = Literal["skill", "topoic"]
+MilestoneType = Literal["skill", "topic"]
 MilestoneStatus = Literal["pending", "in-progress", "done"]
-
 
 class GenerateRequest(BaseModel):
     userId: Optional[str] = None
